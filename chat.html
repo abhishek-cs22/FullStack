@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat UI</title>
+    <link rel="stylesheet" href="chatcsss.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="contact-info">
+                <img src="profile-pic.jpg" alt="Profile" class="profile-pic">
+                <div class="contact-name">John Doe</div>
+            </div>
+            <div class="chat-options">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+        <div class="chat-body">
+            <div class="message received">
+                <span class="message-text">Hey there! How are you?</span>
+                <span class="message-time">10:00 AM</span>
+            </div>
+            <div class="message sent">
+                <span class="message-text">I'm good, thanks! How about you?</span>
+                <span class="message-time">10:02 AM</span>
+            </div>
+            <div class="message received">
+                <span class="message-text">Doing well, just working on some projects.</span>
+                <span class="message-time">10:05 AM</span>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" class="message-input" placeholder="Type a message">
+            <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</body>
+</html>
