@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .timetable-container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .timetable th, .timetable td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .timetable th {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+        }
+
+        .timetable td {
+            font-size: 16px;
+        }
+
+        .time-slot {
+            background-color: #f2f2f2;
+        }
+
+        .activity {
+            background-color: #f0efe4;
+        }
+
+        .activity-break {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .activity-empty {
+            background-color: #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            .timetable-container {
+                padding: 10px;
+            }
+
+            .timetable th, .timetable td {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="timetable-container">
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time-slot">8:00 AM - 9:00 AM</td>
+                    <td class="activity">Math</td>
+                    <td class="activity">Science</td>
+                    <td class="activity">History</td>
+                    <td class="activity">Math</td>
+                    <td class="activity">English</td>
+                </tr>
+                <tr>
+                    <td class="time-slot">9:00 AM - 10:00 AM</td>
+                    <td class="activity">English</td>
+                    <td class="activity">Math</td>
+                    <td class="activity">Science</td>
+                    <td class="activity">History</td>
+                    <td class="activity">Art</td>
+                </tr>
+                <tr>
+                    <td class="time-slot">10:00 AM - 11:00 AM</td>
+                    <td class="activity-break">Break</td>
+                    <td class="activity-break">Break</td>
+                    <td class="activity-break">Break</td>
+                    <td class="activity-break">Break</td>
+                    <td class="activity-break">Break</td>
+                </tr>
+                <tr>
+                    <td class="time-slot">11:00 AM - 12:00 PM</td>
+                    <td class="activity">Science</td>
+                    <td class="activity">English</td>
+                    <td class="activity">Math</td>
+                    <td class="activity">Science</td>
+                    <td class="activity">Physical Education</td>
+                </tr>
+                <tr>
+                    <td class="time-slot">12:00 PM - 1:00 PM</td>
+                    <td class="activity-empty"></td>
+                    <td class="activity-empty"></td>
+                    <td class="activity-empty"></td>
+                    <td class="activity-empty"></td>
+                    <td class="activity-empty"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">1:00 PM - 2:00 PM</td>
+                    <td class="activity">History</td>
+                    <td class="activity">Art</td>
+                    <td class="activity">English</td>
+                    <td class="activity">Math</td>
+                    <td class="activity">Science</td>
+                </tr>
+                <tr>
+                    <td class="time-slot">2:00 PM - 3:00 PM</td>
+                    <td class="activity">Art</td>
+                    <td class="activity">Physical Education</td>
+                    <td class="activity">Science</td>
+                    <td class="activity">English</td>
+                    <td class="activity">Math</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
