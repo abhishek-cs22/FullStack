@@ -4,19 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        h1{
+            color: rgb(255, 60, 17);
+        }
+        button{
+            background-color: aquamarine ;
+            border-color: aquamarine;
+        }
+        label{
+            color:black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform:capitalize;
+        }
+        .login{
+            
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="login">Login</h1>
-    <form action="#">
-        <label for="username">username</label>
-        <input type="text" name="username" id="username">
-        <br />
-        <br />
-        <label for="password">password</label>
-        <input type="password" name="password" id="password"> 
-        <br/>
-        <Br />
-        <button>login</button>
-    </form>
+    <div class="login">
+        <h1>Login</h1>
+        <form action="#">
+            <label for="username">username:</label>
+            <input type="text" name="username" id="username">
+            <br />
+            <br />
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password"> 
+            <br/>
+            <Br />
+            <button>login</button>
+        </form>
+    </div>
+    <a href="register.html">click here to register</a>
 </body>
 </html>
