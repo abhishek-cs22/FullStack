@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 1rem 1rem;
+            height: 40px;
+            font-size: 1rem;
+            border: 1ps solid white;
+            color:white;
+            cursor: pointer;
+            z-index: 1;
+            border-radius: 50% 10% / 10% 50%;
+            background-color: rgb(48, 152, 187);
+            
+            
+        }
+        .but{
+            text-align: center;
+        }
+        #l{
+            border: 1px solid black;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background: linear-gradient(red),(yellow); */
+        }
+        h1,p,li,h3{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="l" style="background: linear-gradient(red,rgb(0, 0, 255)); ">
+        <h1>Logging Message</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="but">
+            <button onclick="console.log('log')" >log messages</button>
+            <button onclick="console.warn('warn')" >Warn messages</button>
+            <button>Error messages</button>
+            <button>Info message</button>
+            <button>Clear console</button>
+            <button>Assert</button>
+            <button>Table</button>
+            <button>Group</button>
+            <button>Cause error</button>
+            <button>Cause violation</button>
+            
+        </div>
+        <h3>To open the console</h3>
+        <ul><li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor.</li></ul>
+    </div>
+</body>
+</html>

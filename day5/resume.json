@@ -1,0 +1,34 @@
+const resume = {
+  "name": "Abhishek verma",
+  "course": "Btech",
+  "branch": "cs",
+  "age": "20",
+  "contactnumbers": [
+    {
+      "type": "mobile",
+      "label": "contact number",
+      "number": 979529492
+    },
+    {
+      "type": "mobile",
+      "label": "whatsapp number",
+      "number": 9555417242
+    }
+  ],
+  "currentAddress": {
+    "houseno": 287,
+    "city": "ayodhya",
+    "dist": "faizabad",
+    "pincode": 224209,
+    "state": "up",
+    "country": "india"
+  },
+  "education": {
+    "10th": 2020,
+    "12th": 2022
+  },
+  "skills": {
+    "programminglanguages": "java,c,c++,python",
+    "other": "html, css , js"
+  }
+}
