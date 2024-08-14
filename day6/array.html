@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in javascript</title>
+</head>
+<body>
+    <h1>javascript array</h1>
+    <script>
+        const arr = ["mango","banana","apple","orange"]
+        console.log("🚀 ~ arr:", arr)
+        
+        for(let i=0; i<arr.length; i++){
+            console.log("index" ,i,"value",arr[i]);
+        }
+        const newArray =arr.map((arr,index) =>
+        {
+            return `${index+1}.$(arr)`
+        });
+
+        const arr1 =[1,2,3,4,5,6,7,8];
+        const evenNumbers = arr1.filter((number) => number%2 === 0);
+        console.log("even = " , evenNumbers)
+        // concat
+        const emotion = ["😊","😒","🤣","😁"]
+        console.log("🚀 ~ emotion:", emotion)
+        const moreemotion =["🥶"]
+        const allemotion = emotion.concat(moreemotion);
+        console.log("🚀 ~ allemotion:", allemotion)
+        
+        // push
+        let rupees = [1,2,3,4,5]
+        // console.log("🚀 ~ rupees:", rupees)
+        // let newrupees = rupees.push(10)
+        // console.log("🚀 ~ newrupees:", newrupees)
+        // console.log("🚀 ~ rupees:", rupees)
+
+        // pop
+        rupees == rupees.pop()
+        console.log("🚀 ~ rupees:", rupees)
+
+        // sort
+        const arr3 = [5,2,3,1,2,8,0]
+        console.log("🚀 ~ arr3:", arr3)
+        console.log("🚀 ~ sort arr3:", arr3.sort())
+
+        // shift remove 1 element
+        arr4 = [1,2,3,5,6];
+        arr4 == arr4.shift()
+        console.log("🚀 ~ shift arr4:", arr4)
+        
+        // fill
+        console.log("🚀 ~ fill array" , arr4.fill(0,0,3))
+        
+        //find
+        const arr5 = [10,20,30,40];
+        console.log("🚀 ~ find arr5:", arr5.find((element) => (element > 30)));
+        
+        // indexOf
+        console.log("🚀 ~ indexOf array5" , arr5.indexOf(20))
+
+        // nested array
+        const nArray = [[1,2],[3,4],[5,6],[7,8]]
+        console.log("🚀 ~ nArray:", nArray)
+        
+        if(10>20){
+            console.log("true")
+        }
+        else{
+            console.log("false")
+        }
+    </script>
+    <script src="./js1.js"> </script>
+</body>
+</html>
