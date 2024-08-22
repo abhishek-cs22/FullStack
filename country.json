@@ -1,0 +1,43 @@
+{
+    "item1":{
+        "id": 3901,
+        "name": "Badakhshan",
+        "state_code": "BDS",
+        "latitude": "36.73477250",
+        "longitude": "70.81199530",
+        "type": null  
+    },
+    "item2":{
+        "id": 3871,
+        "name": "Badghis",
+        "state_code": "BDG",
+        "latitude": "35.16713390",
+        "longitude": "63.76953840",
+        "type": null
+    },
+    "item3":{
+        "id": 3875,
+        "name": "Baghlan",
+        "state_code": "BGL",
+        "latitude": "36.17890260",
+        "longitude": "68.74530640",
+        "type": null  
+    },
+    "item4":{
+        "id": 3884,
+        "name": "Balkh",
+        "state_code": "BAL",
+        "latitude": "36.75506030",
+        "longitude": "66.89753720",
+        "type": null  
+    },
+    "item5":{
+        "id": 3872,
+        "name": "Bamyan",
+        "state_code": "BAM",
+        "latitude": "34.81000670",
+        "longitude": "67.82121040",
+        "type": null 
+    }
+}
+
