@@ -6,10 +6,26 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>json placeholder api using fetch - asyncc and wait</h1>
+    <div class="users"></div>
     <script>
         async function fetchData() {
-            
+            console.log("fetching data");
+            const response = fetch("https://jsonplaceholder.typicode.com/users");
+            console.log("🚀 ~ fetchData ~ response:", response);
+            const users = await response.json();
+            console.log("🚀 ~ fetchData ~ users:", users)
+            users.map((user) => {
+                const userElement = document.createElement("div");
+                userElement.innerHTML=`<h2>${user.name}</h2>
+                <p>Website:<a href='${users.website}'>${user.website}</a></p>
+                <address>
+                    ${users.address.street},${user.address.suite},${user.address.city}
+                `;
+                document.querySelector(".users").appendChild(userElement);
+            });
         }
+        fetchData();
     </script>
 </body>
 </html>

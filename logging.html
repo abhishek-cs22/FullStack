@@ -43,12 +43,12 @@
         <div class="but">
             <button onclick="console.log('log')" >log messages</button>
             <button onclick="console.warn('warn')" >Warn messages</button>
-            <button>Error messages</button>
-            <button>Info message</button>
-            <button>Clear console</button>
-            <button>Assert</button>
-            <button>Table</button>
-            <button>Group</button>
+            <button onclick="console.error('Error')">Error messages</button>
+            <button onclick="console.info('info')" >Info message</button>
+            <button onclick="console.clear('clear')" >Clear console</button>
+            <button onclick="console.assert('assert')" >Assert</button>
+            <button onclick="console.table({'a':1,'b':2})" >Table</button>
+            <button onclick="console.group('group')">Group</button>
             <button>Cause error</button>
             <button>Cause violation</button>
             
